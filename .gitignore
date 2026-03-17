@@ -27,6 +27,12 @@ go.work.sum
 # env file
 .env
 
+# MCP client config (contains credentials)
+.mcp.json
+
+# build output
+build/
+
 # Editor/IDE
 # .idea/
 # .vscode/

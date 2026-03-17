@@ -1,0 +1,17 @@
+{
+	"mcpServers": {
+		"shopify-admin-http": {
+			"type": "http",
+			"url": "http://localhost:9093/mcp"
+		},
+		"shopify-admin-stdio": {
+			"type": "stdio",
+			"command": "/path/to/shopify-admin-mcp-server",
+			"args": [
+				"-stdio",
+				"-store", "myshop.myshopify.com",
+				"-token", "shpca_xxx"
+			]
+		}
+	}
+}

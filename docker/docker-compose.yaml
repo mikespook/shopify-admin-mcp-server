@@ -1,0 +1,14 @@
+services:
+  shopify-admin-mcp-server:
+    image: mikespook/shopify-admin-mcp-server:latest
+    ports:
+      - "9093:9093"
+    environment:
+      SHOPIFY_STORE: ${SHOPIFY_STORE:-}
+      SHOPIFY_TOKEN: ${SHOPIFY_TOKEN:-}
+    volumes:
+      - config:/home/appuser
+    restart: unless-stopped
+
+volumes:
+  config:
